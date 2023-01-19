@@ -1,0 +1,14 @@
+  On Windows machine
+- Run the following command:
+  ssh-keygen
+ 
+- Move the keys from the current working directory into C:\Users\your_username\.ssh
+
+- Copy the public key from Windows to Ubuntu with ssh (password authentication) using the following command:
+  more c:\user\.ssh/id_rsa.pub | ssh username@remote_host "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+  more id_rsa.pub | ssh  "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys" 
+  
+  - Connect with ssh (key will be used automatically
+  
+  ### NOTE ###
+On Windows, it seems you MUST name your key "id_rsa" or it will not be found without further configuration.
