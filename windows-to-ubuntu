@@ -1,4 +1,4 @@
-#On Windows machine run the following command:
+# On Windows machine run the following command:
 ssh-keygen
  
 #Move the keys from the current working directory into C:\Users\your_username\.ssh
